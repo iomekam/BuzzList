@@ -1,6 +1,4 @@
 <?php
-include_once("dbconnect.php");
-
 
 if(isset($_GET['item_id'])
 {
