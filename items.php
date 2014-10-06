@@ -4,12 +4,17 @@ include_once("response.php");
 
 if(!empty($_POST))
 {
+	$name = $_POST["name"];
+	$price = $_POST["price"];
+	$userID = $_POST["user_id"];
 
+	addItem($name, $price, "", $user_id, "");
 }
 
 if(!empty($_GET))
 {
-
+	$id = $_GET["item_id"];
+	getItem($id);
 }
 	
 function getItem($itemID)
