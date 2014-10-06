@@ -8,7 +8,7 @@ function connect()
 	$pwd = "ikenna@MAS";
 	$db = "buzzDB";
 	try{
-		$conn = new PDO( "sqlsrv:server=$server;dbname=$db", $user, $pwd);
+		$conn = new PDO( "sqlsrv:server=$server;Database=$db", $user, $pwd);
 		$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	}
 	catch(Exception $e){
