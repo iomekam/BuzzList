@@ -1,6 +1,8 @@
 <?php
 include_once("dbconnect.php");
 
+$_POST["a"] = 1;
+
 if(isset($_POST["price"] && $_POST["description"] && $_POST["user_id"]))
 {
 	echo "YAS";
