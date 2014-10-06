@@ -17,7 +17,15 @@ function connect()
 	return $conn;
 }
 
-$con = connect()
+$con = connect();
 $sql = "SELECT * FROM item";
-$stmt = $con->query($sql);
+if($con)
+{
+	$stmt = $con->query($sql);
+	echo "done";
+	}
+	else
+	{
+		echo "No";
+	}
 ?>
