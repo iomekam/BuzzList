@@ -18,4 +18,5 @@ function connect()
 }
 
 $con = connect()
+print $con
 ?>
