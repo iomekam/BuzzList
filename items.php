@@ -18,6 +18,4 @@ function getAllItems()
 {
 
 }
-
-print_r(getAllItems());
 ?>
