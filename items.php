@@ -3,7 +3,11 @@ include_once("dbconnect.php");
 include_once("response.php");
 
 $a = array("d" => 1);
-	
+
+if(isset(array["d"))
+{
+	echo "done";
+}	
 function getItem($itemID)
 {
 	$conn = connect();
