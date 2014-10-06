@@ -4,10 +4,8 @@ include_once("response.php");
 
 $a = array("d" => 1);
 
-if(isset(array["d"))
-{
-	echo "done";
-}	
+print_r($_POST);
+	
 function getItem($itemID)
 {
 	$conn = connect();
