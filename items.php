@@ -1,5 +1,10 @@
 <?php
 include_once("dbconnect.php");
+
+if(isset($_POST["price"] && $_POST["description"] && $_POST["user_id"]))
+{
+	echo "YAS";
+}
 	
 function getItem($itemID)
 {
