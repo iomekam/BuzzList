@@ -14,6 +14,4 @@ function getAllItems()
 	print_r( $stmt->fetchAll(PDO::FETCH_NUM) );
 }
 
-getAllItems();
-
 ?>
