@@ -15,6 +15,4 @@ function getAllItems()
 	$stmt = $con->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
-
-print_r(getAllItems());
 ?>
