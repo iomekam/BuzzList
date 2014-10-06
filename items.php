@@ -1,6 +1,8 @@
 <?php
 include_once("dbconnect.php");
 include_once("response.php");
+
+$a = array("d" => 1);
 	
 function getItem($itemID)
 {
@@ -29,6 +31,7 @@ function addItem($name, $price, $description, $user_id, $image_url)
 	$stmt->bindValue(3, $description);
 	$stmt->bindValue(4, $user_id);
 	$stmt->bindValue(5, $image_url);
+	
 	$stmt->execute();
 }
 
