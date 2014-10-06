@@ -19,5 +19,5 @@ function connect()
 
 $con = connect()
 $sql = "SELECT * FROM item";
-$stmt = $conn->query($sql);
+$stmt = $con->query($sql);
 ?>
