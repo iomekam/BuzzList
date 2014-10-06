@@ -1,32 +1,18 @@
 <?php
-class DBConnect
+function connect()
 {
-	private $conn;
-	
-	function __construct()
-	{
-		$server = "hqwkbgz8vt.database.windows.net";
-		$user = "buzzDB";
-		$pwd = "ikenna@MAS";
-		$db = "buzzDB";
-		try
-		{
-			$this->conn = new PDO( "sqlsrv:server=$server;Database=$db", $user, $pwd);
-			$this->conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-		}
-		catch(Exception $e){
-			die(print_r($e));
-		}
+	// DB connection info
+	$server = "hqwkbgz8vt.database.windows.net";
+	$user = "buzzDB";
+	$pwd = "ikenna@MAS";
+	$db = "buzzDB";
+	try{
+		$conn = new PDO( "sqlsrv:server=$server;Database=$db", $user, $pwd);
+		$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	}
-	
-	function connect()
-	{
-		return $this->conn;
+	catch(Exception $e){
+		die(print_r($e));
 	}
-	
-	function __destruct()
-	{
-		
-	}
+	return $conn;
 }
 ?>

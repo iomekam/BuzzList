@@ -1,7 +1,5 @@
 <?php
 include_once("dbconnect.php");
-
-$db = new DBConnect();
 	
 function getItem($itemID)
 {
