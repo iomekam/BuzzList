@@ -2,11 +2,6 @@
 include_once("dbconnect.php");
 
 $db = new DBConnect();
-
-if(isset($_GET['item_id'])
-{
-	
-}
 	
 function getItem($itemID)
 {
