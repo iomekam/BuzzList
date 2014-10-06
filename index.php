@@ -18,5 +18,5 @@ function connect()
 }
 
 $con = connect()
-print $con
+print_r( $con)
 ?>
