@@ -5,6 +5,10 @@ class DBConnect
 	
 	function __construct()
 	{
+	}
+	
+	function connect()
+	{
 		$server = "hqwkbgz8vt.database.windows.net";
 		$user = "buzzDB";
 		$pwd = "ikenna@MAS";
@@ -17,10 +21,7 @@ class DBConnect
 		catch(Exception $e){
 			die(print_r($e));
 		}
-	}
-	
-	function connect()
-	{
+		
 		return $this->conn;
 	}
 	
