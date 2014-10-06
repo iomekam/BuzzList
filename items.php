@@ -6,7 +6,7 @@ $_POST["d"] = 1;
 
 if(!empty($_POST))
 {
-	if(array_key_exists($_POST["d"])
+	if(array_key_exists("d", $_POST)
 	{
 		echo "f";
 	}
