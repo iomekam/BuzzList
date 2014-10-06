@@ -12,7 +12,7 @@ function getAllItems()
 {
 	$conn = $db->connect();
 	$sql = "SELECT * FROM item";
-	$stmt = $con->query($sql);
+	$stmt = $conn->query($sql);
 	print_r( $stmt->fetchAll(PDO::FETCH_NUM) );
 }
 
