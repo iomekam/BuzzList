@@ -7,8 +7,9 @@ function connect()
 	$user = "buzzDB";
 	$pwd = "ikenna@MAS";
 	$db = "buzzDB";
+	
 	try{
-		$conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
+		$conn = new PDO( "dbname=$db", $user, $pwd);
 		$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	}
 	catch(Exception $e){
@@ -16,7 +17,6 @@ function connect()
 	}
 	return $conn;
 }
-
 
 $con = connect()
 ?>
