@@ -1,8 +1,4 @@
-Server: hqwkbgz8vt.database.windows.net,1433
-SQL Database: buzzDB
-User Name: buzzDB
 
-PHP Data Objects(PDO) Sample Code:
 <?php
 
 try 
