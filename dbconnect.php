@@ -17,7 +17,10 @@ class DBConnect
 		catch(Exception $e){
 			die(print_r($e));
 		}
-		
+	}
+	
+	function connect()
+	{
 		return $this->conn;
 	}
 	
