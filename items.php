@@ -4,7 +4,10 @@ include_once("response.php");
 	
 function getItem($itemID)
 {
-	
+	$conn = connect();
+	$sql = "SELECT * FROM item WHERE item_id = $itemID";
+	$stmt = $conn->query($sql);
+	sendResponse(200, json_encode($stmt->fetchAll()));
 }
 
 function getAllItems()
@@ -29,6 +32,7 @@ function addItem($name, $price, $description, $user_id, $image_url)
 	$stmt->execute();
 }
 
-getAllItems();
+getItems();
+//getAllItems();
 
 ?>
