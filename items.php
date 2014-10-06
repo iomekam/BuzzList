@@ -1,12 +1,6 @@
 <?php
 include_once("dbconnect.php");
 
-$_POST["a"] = 1;
-
-if(isset($_POST["price"] && $_POST["description"] && $_POST["user_id"]))
-{
-	echo "YAS";
-}
 	
 function getItem($itemID)
 {
@@ -19,6 +13,19 @@ function getAllItems()
 	$sql = "SELECT * FROM item";
 	$stmt = $conn->query($sql);
 	print_r( $stmt->fetchAll(PDO::FETCH_NUM) );
+}
+
+function addItem($name, $price, $description, $user_id, $image_url)
+{
+	$conn = connect();
+	$sql = "INSERT INTO item (name, price, description, user_id, image_url) VALUES (?, ?, ?, ?, ?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bindValue(1, $name);
+	$stmt->bindValue(2, $price);
+	$stmt->bindValue(3, $description);
+	$stmt->bindValue(4, $user_id);
+	$stmt->bindValue(5, $image_url);
+	$stmt->execute();
 }
 
 getAllItems();
