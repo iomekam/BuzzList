@@ -2,11 +2,14 @@
 include_once("dbconnect.php");
 include_once("response.php");
 
-$a = array("d" => 1);
+$_POST["d"] = 1;
 
 if(!empty($_POST))
 {
-	echo "finally";
+	if(isset($_POST["d"])
+	{
+		echo "f";
+	}
 }
 else
 {
