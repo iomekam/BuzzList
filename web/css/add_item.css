@@ -1,0 +1,82 @@
+body
+{
+    background-color: #000040; 
+}
+
+#title_logo
+{
+    position: absolute; 
+    height: 50px; 
+    width: 50px;
+    right: 0px
+}
+
+#page
+{
+    position: fixed; 
+    left: 10%; 
+    width: 80%; 
+    height: 100%; 
+    background-color: white; 
+}
+
+#page_title
+{
+    position: relative; 
+    width: 90%;
+    left: 5%;
+    text-align: center;
+}
+
+#page_title_div
+{
+    position: absolute; 
+    left: -2%; 
+    top: 20px; 
+    width: 104%; 
+    background-color: #ffff80; 
+    border-radius: 5px;
+    text-color: #000040; 
+}
+
+#page_content
+{
+    position: absolute; 
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    top: 25%; 
+    left: 30%;  
+    width: 40%; 
+}
+
+#image
+{
+    cursor: pointer;
+}
+
+#form_div
+{
+    position: relative; 
+    top: -20px;
+}
+
+#item_image_holder
+{
+    text-align: right;    
+}
+
+input[type=text]
+{
+    border: none; 
+    background-color: #eeeeee; 
+    padding: 5px;
+}
+
+textarea
+{
+    border: none; 
+    background-color: #eeeeee;
+    width: 400px; 
+    height: 150px; 
+}
+
