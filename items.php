@@ -17,7 +17,7 @@ function getItem($itemID)
 	$conn = connect();
 	$sql = "SELECT * FROM item WHERE item_id = $itemID";
 	$stmt = $conn->query($sql);
-	sendResponse(200, json_encode($stmt->fetchAll()));
+	sendResponse(200, json_encode($stmt->fetchAll(PDO::FETCH_ASSOC)));
 }
 
 function getAllItems()
@@ -25,7 +25,7 @@ function getAllItems()
 	$conn = connect();
 	$sql = "SELECT * FROM item";
 	$stmt = $conn->query($sql);
-	sendResponse(200, json_encode($stmt->fetchAll()));
+	sendResponse(200, json_encode($stmt->fetchAll(PDO::FETCH_ASSOC)));
 }
 
 function addItem($name, $price, $description, $user_id, $image_url)
