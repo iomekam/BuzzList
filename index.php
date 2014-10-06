@@ -22,7 +22,7 @@ $sql = "SELECT * FROM item";
 if($con)
 {
 	$stmt = $con->query($sql);
-	echo "done";
+	echo $stmt->fetchAll(PDO::FETCH_NUM);
 	}
 	else
 	{
