@@ -32,7 +32,7 @@ function addItem($name, $price, $description, $user_id, $image_url)
 	$stmt->execute();
 }
 
-getItems();
+getItems(2);
 //getAllItems();
 
 ?>
