@@ -2,8 +2,6 @@
 include_once("dbconnect.php");
 include_once("response.php");
 
-$_POST["d"] = 1;
-
 if(!empty($_POST))
 {
 	if(array_key_exists("d", $_POST)
