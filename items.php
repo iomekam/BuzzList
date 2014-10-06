@@ -4,7 +4,14 @@ include_once("response.php");
 
 $a = array("d" => 1);
 
-print_r($_POST);
+if(!empty($_POST))
+{
+	echo "finally";
+}
+else
+{
+	echo "...";
+}
 	
 function getItem($itemID)
 {
