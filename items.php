@@ -12,7 +12,7 @@ function getAllItems()
 	$conn = connect();
 	$sql = "SELECT * FROM item";
 	$stmt = $conn->query($sql);
-	sendResponse(200, json_encode($stmt->fetchAll(PDO::FETCH_NUM)));
+	sendResponse(200, json_encode($stmt->fetchAll()));
 }
 
 function addItem($name, $price, $description, $user_id, $image_url)
