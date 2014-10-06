@@ -18,4 +18,6 @@ function connect()
 }
 
 $con = connect()
+$sql = "SELECT * FROM item";
+$stmt = $conn->query($sql);
 ?>
