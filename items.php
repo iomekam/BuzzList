@@ -4,14 +4,12 @@ include_once("response.php");
 
 if(!empty($_POST))
 {
-	if(array_key_exists("d", $_POST)
-	{
-		echo "f";
-	}
+
 }
-else
+
+if(!empty($_GET))
 {
-	echo "...";
+
 }
 	
 function getItem($itemID)
