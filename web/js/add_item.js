@@ -10,7 +10,7 @@ function add_image(){
 function add_new_item()
 {
     $.ajax({
-        url : "items.php",
+        url : "../../items.php",
         type: 'POST',
         data : {
             name:        $( '#title' ).val(), 
