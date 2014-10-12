@@ -2,6 +2,20 @@
 
 $( '#image' ).on( 'click', add_image );
 
+// show and hide the navigation dropdown buttons
+
+$( '#page_title_div' ).hover( function()
+{
+    if( $( '#title_dropdown' ).is( ':hidden' ) )
+    {
+        $( '#title_dropdown' ).slideDown();  
+    }
+    else
+    {
+        $( '#title_dropdown' ).hide();  
+    }
+}); 
+
 function add_image(){
     $( '#upload_image' ).click(); 
     console.log( 'upload new image' ); 

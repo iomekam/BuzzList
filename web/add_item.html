@@ -8,7 +8,12 @@
         <div id="page">
 
             <div id="page_title_div">
-                <h1 id="page_title" >Add New Item<img id="title_logo" src="images/buzz.png"></img></h1>
+                <h1 id="page_title" >Add New Item<!-- <img id="title_logo" src="images/buzz.png"> --></img></h1>
+                <div id="title_dropdown">
+                    <button class='title button'>Home      </button>
+                    <button class='title button'>Add Item  </button>
+                    <button class='title button'>My Account</button>
+                </div>
             </div>
 
             <div id="page_content">
@@ -23,7 +28,7 @@
                         <textarea          id="description"  placeholder="Description"></textarea><br>
                         <input type='text' id="tags"         placeholder="Tags"         style="width: 400px"></input><br>
 
-                        <input type="submit" onclick="add_new_item()" value='Add Item' /><br>
+                        <input type="submit" class="button" onclick="add_new_item()" value='Add Item' /><br>
                         <input type="file" id="upload_image" name="new_image" style="visibility: hidden"></input>
                     </form>
                 </div>

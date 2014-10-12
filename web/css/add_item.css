@@ -31,12 +31,35 @@ body
 #page_title_div
 {
     position: absolute; 
+    z-index: 1;
     left: -2%; 
     top: 20px; 
     width: 104%; 
+    height: 80px;
     background-color: #ffff80; 
     border-radius: 5px;
     text-color: #000040; 
+}
+
+#page_title_div:hover
+{
+    border: 1px solid white; 
+    background-color: #000040; 
+    color: white;
+}
+
+#title_dropdown
+{
+    position: relative; 
+    padding: 4px;
+    z-index: 0;
+    border: 1px solid #000040;
+    background-color: #ffff80; 
+    top: -1px;
+    left: 20%;
+    width: 60%; 
+    height: 30px; 
+    display: none; 
 }
 
 #page_content
@@ -63,6 +86,20 @@ body
 #item_image_holder
 {
     text-align: right;    
+}
+
+.button
+{
+    padding: 4px;
+    border-radius: 2px;
+    border: none; 
+    background-color: #000040;  
+    color: white; 
+}
+.button:hover
+{
+    background-color: #ffff80;
+    color: #000040;
 }
 
 input[type=text]
